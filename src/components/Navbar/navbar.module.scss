@@ -1,0 +1,116 @@
+@import '../../scss/mixins.scss';
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+
+    &__link {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    @include screenLap {
+        display: none;
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--main-bg-color);
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 30px;
+        padding-left: 10vw;
+        padding-top: 100px;
+
+        &::after {
+            content: 'X';
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            font-weight: 600;
+            border-radius: 50%;
+            top: 10px;
+            right: 10px;
+            padding: 30px;
+            width: 40px;
+            height: 40px;
+            background-color: var(--btn-color);
+            color: var(--white-color);
+        }
+
+        &.open {
+            display: flex;
+        }
+    }
+
+}
+
+.link {
+    flex: 1;
+    text-align: center;
+
+    @include screenLap {
+        flex: 0;
+        font-size: 18px;
+        background-color: var(--btn-color);
+        color: var(--white-color);
+        padding: 20px 40px;
+        border-radius: 10px;
+
+        &Logo {
+            background-color: transparent;
+            padding: 0px;
+        }
+    }
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger {
+    display: block;
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+    position: relative;
+
+    .line {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 2px;
+        background-color: var(--btn-color);
+
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--btn-color);
+        }
+
+        &::after {
+            top: 10px;
+        }
+
+        &::before {
+            bottom: 10px;
+        }
+    }
+
+}

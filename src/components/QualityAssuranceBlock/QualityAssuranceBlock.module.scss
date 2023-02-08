@@ -1,0 +1,81 @@
+@import '../../scss/mixins.scss';
+
+.qualityAssuranceBlock {
+    border: 7px solid var(--btn-color);
+    position: relative;
+    padding-bottom: 20px;
+    display: grid;
+    align-items: center;
+    margin-top: 160px;
+
+
+    &::after {
+        position: absolute;
+        content: '';
+        inset: 5px;
+        border: 1px solid var(--btn-color);
+
+        @include screenMob {
+            border: 0px solid var(--btn-color);
+        }
+    }
+
+    @include screenMob {
+        border: 0px solid var(--btn-color);
+        margin-top: 0px;
+    }
+
+}
+
+.title {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.wrapper {
+    border: 0px solid var(--btn-color);
+    position: relative;
+    padding: 0 10vw;
+    display: grid;
+
+
+
+    &::after {
+        position: absolute;
+        content: '';
+        inset: 5px;
+        border: 0px solid var(--btn-color);
+
+        @include screenMob {
+            border: 1px solid var(--btn-color);
+        }
+    }
+
+    @include screenMob {
+        border: 7px solid var(--btn-color);
+        padding: 100px 17px 0px;
+    }
+
+}
+
+.logo {
+    justify-self: end;
+    transform: translate(100px, -10px);
+
+    @include screenLap {
+        width: 120px;
+        height: 120px;
+        transform: translate(70px, -10px);
+    }
+
+    @include screenMob {
+        width: 70px;
+        height: 70px;
+        transform: translate(0px, 0px);
+        margin-top: 10px;
+        margin-bottom: 70px;
+
+    }
+
+}

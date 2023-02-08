@@ -1,0 +1,117 @@
+// @import '../../scss/mixins.scss';
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--black-color);
+    font-family: OpenSans;
+    font-weight: 300;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+
+
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1160px;
+    padding: 0 20px;
+
+
+}
+
+.link {
+    font-family: OpenSans;
+    font-weight: 300;
+    color: inherit;
+    text-decoration: none;
+
+    &__active {
+        color: red;
+    }
+}
+
+// .title {
+//     font-size: 48px;
+//     font-weight: 400;
+//     margin-top: 30px;
+//     margin-bottom: 40px;
+
+//     @include screenDesc {
+//         font-size: 42px;
+//     }
+
+//     @include screenLap {
+//         font-size: 32px;
+//     }
+// }
+.title {
+    font-family: TenorSans;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: 160px;
+    margin-bottom: 100px;
+
+
+    &Hero {
+        font-family: TenorSans;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 150%;
+        margin-top: 30px;
+        margin-bottom: 40px;
+
+        @include screenDesc {
+            font-size: 42px;
+        }
+
+        @include screenLap {
+            font-size: 32px;
+        }
+    }
+
+    @include screenDesc {
+        font-size: 42px;
+    }
+
+    @include screenLap {
+        font-size: 32px;
+        text-align: center;
+        margin-top: 90px;
+        margin-bottom: 60px;
+    }
+}
+
+
+
+.title3 {
+    font-family: TenorSans;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 18px;
+}

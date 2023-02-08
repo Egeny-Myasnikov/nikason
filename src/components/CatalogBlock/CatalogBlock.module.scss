@@ -1,0 +1,28 @@
+@import '../../scss/mixins.scss';
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include screenDesc {
+        justify-content: center;
+    }
+}
+
+.item {
+    border: 1px solid var(--second-color);
+    text-align: center;
+    width: 280px;
+    height: 242px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include screenLap {
+        flex-wrap: wrap;
+        width: 153px;
+        height: 177px;
+    }
+}

@@ -1,0 +1,21 @@
+.svgLg {
+    width: 40px;
+    height: 40px;
+
+
+    &__icon {
+        stroke: var(--second-color);
+        fill: transparent;
+
+        &White {
+            stroke: var(--white-color);
+            fill: transparent;
+        }
+    }
+
+}
+
+.svgBig {
+    width: 50px;
+    height: 50px;
+}

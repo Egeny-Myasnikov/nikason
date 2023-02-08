@@ -1,0 +1,30 @@
+// breackPoints screen
+@mixin screenDescBig {
+    @media screen and (max-width: 1400px) {
+        @content;
+    }
+}
+
+@mixin screenDesc {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin screenLapBig {
+    @media screen and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin screenLap {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin screenMob {
+    @media screen and (max-width: 576px) {
+        @content;
+    }
+}

@@ -1,0 +1,36 @@
+@import '../../scss/mixins.scss';
+
+
+.videoBlock {
+    position: relative;
+    min-height: 700px;
+    width: 100%;
+    background-color: #c4c4c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include screenDesc {
+        min-height: 600px;
+    }
+
+    @include screenLapBig {
+        min-height: 500px;
+    }
+
+    @include screenLap {
+        min-height: 400px;
+    }
+
+    @include screenMob {
+        min-height: 300px;
+    }
+}
+
+.video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+}

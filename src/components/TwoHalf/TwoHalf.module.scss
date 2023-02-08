@@ -1,0 +1,63 @@
+@import '../../scss/mixins.scss';
+
+.twoHalf {
+    display: flex;
+    align-items: center;
+
+    &__blue {
+        background-color: #ebeeeb;
+    }
+
+    &__brown {
+        background-color: #d4cdc3;
+    }
+
+    &__brownLight {
+        background-color: #e3dace;
+    }
+
+    @include screenDesc {
+        align-items: start;
+    }
+
+    @include screenLap {
+
+        flex-direction: column-reverse;
+    }
+
+    &Revers {
+        @include screenLap {
+
+            flex-direction: column;
+        }
+    }
+}
+
+
+.col {
+    width: 50%;
+
+    @include screenLap {
+        width: 100%;
+    }
+}
+
+.colRight {
+    padding: 0 40px;
+
+    @include screenDesc {
+        padding: 20px 40px;
+    }
+
+    @include screenLap {
+
+        padding: 20px 40px;
+    }
+}
+
+.img {
+    width: 100%;
+    display: block;
+
+
+}

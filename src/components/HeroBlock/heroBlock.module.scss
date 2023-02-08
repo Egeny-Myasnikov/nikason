@@ -1,0 +1,21 @@
+@import '../../scss/mixins.scss';
+
+.heroSubTitle {
+    font-size: 16px;
+    font-weight: 300;
+
+}
+
+.heroBtn {
+    margin-top: 70px;
+    margin-bottom: 94px;
+}
+
+.heroSocbar {
+    gap: 40px;
+    justify-content: end;
+
+    @include screenDesc {
+        justify-content: start;
+    }
+}

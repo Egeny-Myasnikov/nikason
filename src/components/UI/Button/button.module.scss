@@ -1,0 +1,28 @@
+.btn {
+    padding: 18px 55px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity .4s linear;
+    min-width: 245px;
+    font-size: 16px;
+    font-family: OpenSans;
+    font-weight: 400;
+    display: inline-block;
+
+    &__primary {
+        background-color: var(--btn-color);
+        color: var(--white-color);
+    }
+
+    &__secondary {
+        background-color: var(--white-color);
+        color: var(--first-color);
+    }
+
+    &:hover {
+        opacity: .9;
+    }
+
+}
