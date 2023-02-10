@@ -1,5 +1,5 @@
-import s from './CatalogBlock.module.scss';
-import cataloglist from '../../helpers/catalogList';
+import s from './CatalogBlock.module.scss'
+import cataloglist from '@helpers/catalogList'
 const CatalogBlock = () => {
     return (
         <div className={s.catalogBlock}>

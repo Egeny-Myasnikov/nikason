@@ -1,12 +1,16 @@
-import Header from '../components/Header';
+import Header from '@components/Header';
+import Footer from '@components/Footer';
 
 const Workshop = () => {
     return (
-        <div className="contacts">
+        <div className='wrapper'>
             <Header />
-            <div className='container'>
-                <h1>Workshop Page</h1>
-            </div>
+            <main className="main">
+                <div className="container">
+                    <h1>Workshop page</h1>
+                </div>
+            </main>
+            <Footer />
         </div>
     );
 };

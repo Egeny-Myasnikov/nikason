@@ -1,12 +1,16 @@
-import Header from '../components/Header';
+import Header from '@components/Header';
+import Footer from '@components/Footer';
 
 const Furniture = () => {
     return (
-        <div className="contacts">
+        <div className='wrapper'>
             <Header />
-            <div className='container'>
-                <h1>Furniture Page</h1>
-            </div>
+            <main className="main">
+                <div className="container">
+                    <h1>Furniture page</h1>
+                </div>
+            </main>
+            <Footer />
         </div>
     );
 };

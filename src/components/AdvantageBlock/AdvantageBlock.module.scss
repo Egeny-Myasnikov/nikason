@@ -1,11 +1,16 @@
 @import '../../scss/mixins.scss';
 
+.advantageBlock {
+    margin-top: 160px;
+}
+
 .list {
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 20px;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 
     @include screenLap {
         flex-direction: column;
@@ -19,4 +24,8 @@
     font-size: 18px;
     line-height: 150%;
     text-align: center;
+}
+
+.title {
+    margin-bottom: 20px;
 }

@@ -1,12 +1,9 @@
-import React, { createRef } from 'react';
-
-import Socbar from '../Socbar';
-
-import Button from './../UI/Button';
-
-import s from './heroBlock.module.scss';
-import homeHiroImg from './../../assets/img/home-hero.webp';
-import TwoHalf from '../TwoHalf';
+import { createRef } from 'react'
+import Socbar from '@components/Socbar'
+import TwoHalf from '@components/TwoHalf'
+import Button from '@components/UI/Button'
+import s from './heroBlock.module.scss'
+import homeHiroImg from './../../../assets/img/home-hero.webp'
 
 const HeroBlock = ({ btnOnClick }) => {
     const ref = createRef()

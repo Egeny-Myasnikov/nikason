@@ -1,15 +1,14 @@
-import servecesList from '../../helpers/servecesList';
-import TwoHalf from '../TwoHalf'
-import Button from '../UI/Button';
-
+import TwoHalf from '@components/TwoHalf'
+import Button from '@components/UI/Button'
+import servecesList from '@helpers/servecesList'
 import s from './ServecesBlock.module.scss'
-const ServecesBlock = ({ ref }) => {
+const ServecesBlock = ({ servecesref }) => {
     return (
         <>
             <div className="container">
                 <h2 className='title' >
                     Наши услуги
-                    <span servecesref={ref}></span>
+                    <span ref={servecesref}></span>
                 </h2>
             </div>
             {servecesList.map((item, i) => {

@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { useEffect, useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import s from './navbar.module.scss'
-import logo from "./../../assets/img/logo-nikason.webp";
-import { navList1, navList2 } from '../../helpers/navList';
+import logo from "./../../assets/img/logo-nikason.webp"
+import { navList1, navList2 } from '@helpers/navList'
 const Navbar = () => {
     const hasActive = ({ isActive }) => isActive ? `link  ${s.link} link__active` : `link ${s.link}`
 
@@ -29,14 +29,14 @@ const Navbar = () => {
         <>
             {size <= 768
                 &&
-                <div className={s.flex + ' ' + 'container'}>
+                <div className={`${s.flex} container`}>
                     <NavLink className={hasActive + s.linkLogo} to={'/'}>
                         <img src={logo} alt="logo Nikason" />
                     </NavLink>
                     <button onClick={openNav} className={s.burger}><span className={s.line}></span></button>
                 </div>
             }
-            <nav onClick={openNav} className={s.navbar + ' container' + ' ' + open}>
+            <nav onClick={openNav} className={`${s.navbar} container ${open}`}>
                 {navList1.map((nav, i) => <NavLink key={i} className={hasActive} to={nav.path}>{nav.text}</NavLink>)}
                 {size >= 768
                     &&

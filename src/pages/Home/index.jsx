@@ -1,13 +1,13 @@
 import React, { useRef } from 'react';
-import AdvantageBlock from '../components/AdvantageBlock';
-import CatalogBlock from '../components/CatalogBlock';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import HeroBlock from '../components/HeroBlock';
-import VideoBlock from '../components/VideoBlock';
-import QualityAssuranceBlock from '../components/QualityAssuranceBlock';
-import AboutBlock from '../components/AboutBlock';
-import ServecesBlock from '../components/ServecesBlock';
+import Header from '@components/Header';
+import Footer from '@components/Footer';
+import HeroBlock from './HeroBlock';
+import AdvantageBlock from '@components/AdvantageBlock';
+import CatalogBlock from './CatalogBlock';
+import AboutBlock from './AboutBlock';
+import VideoBlock from './VideoBlock';
+import ServecesBlock from './ServecesBlock';
+import QualityAssuranceBlock from './QualityAssuranceBlock';
 const Home = () => {
     const servecesRef = useRef(null);
     const moveTo = () => {
@@ -21,15 +21,14 @@ const Home = () => {
             <Header />
             <main className="main">
                 <HeroBlock btnOnClick={moveTo} />
+                <AdvantageBlock title='NIKASON BRAND это' homePage />
                 <div className="container">
-                    <AdvantageBlock />
                     <CatalogBlock />
                 </div>
                 <AboutBlock />
                 <VideoBlock />
                 <ServecesBlock servecesref={servecesRef} />
                 <QualityAssuranceBlock />
-
             </main>
             <Footer />
         </div>

@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
-import { links, navList1, navList2 } from '../../helpers/navList';
-import Socbar from './../Socbar';
+import { links, navList1, navList2 } from '@helpers/navList';
+import Socbar from '@components/Socbar';
 import s from './footer.module.scss';
 const Footer = () => {
     const hasActive = ({ isActive }) => isActive ? 'link link__active' : 'link'

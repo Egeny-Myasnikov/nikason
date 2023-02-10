@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import ReactPlayer from 'react-player';
-import s from './VideoBlock.module.scss';
+import { useState } from 'react'
+// import ReactPlayer from 'react-player'
+import s from './VideoBlock.module.scss'
 const VideoBlock = () => {
     const [state, setState] = useState(false)
 
@@ -14,7 +14,7 @@ const VideoBlock = () => {
             <div onClick={log} className={s.videoBlock}>
                 <div className={s.video}>
 
-                    <ReactPlayer
+                    {/* <ReactPlayer
                         url='https://www.youtube.com/embed/LXyTZIEQAsI'
                         width="100%"
                         height="100%"
@@ -23,7 +23,7 @@ const VideoBlock = () => {
                                 playerVars: { showinfo: 0 }
                             }
                         }}
-                    />
+                    /> */}
                 </div>
             </div>
         </div>

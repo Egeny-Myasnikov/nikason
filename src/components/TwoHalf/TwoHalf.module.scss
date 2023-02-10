@@ -16,6 +16,10 @@
         background-color: #e3dace;
     }
 
+    &__transparent {
+        background-color: transparent;
+    }
+
     @include screenDesc {
         align-items: start;
     }

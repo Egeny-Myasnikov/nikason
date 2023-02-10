@@ -1,7 +1,7 @@
-import TwoHalf from '../TwoHalf';
-import Button from '../UI/Button';
-import imgPhoto from './../../assets/img/photo--1-1.webp'
-import s from './AboutBlock.module.scss';
+import TwoHalf from '@components/TwoHalf'
+import Button from '@components/UI/Button'
+import imgPhoto from './../../../assets/img/photo--1-1.webp'
+import s from './AboutBlock.module.scss'
 
 const AboutBlock = () => {
     return (<>

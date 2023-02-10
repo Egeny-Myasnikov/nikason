@@ -1,4 +1,4 @@
-import Icon from '../UI/Sprites';
+import Icon from '@components/UI/Sprites';
 import s from './socbar.module.scss';
 const Socbar = ({ propsClass, white, big }) => {
     return (
