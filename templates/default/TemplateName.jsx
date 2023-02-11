@@ -1,7 +1,7 @@
 import s from './TemplateName.module.scss';
-const TemplateName = ({ }) => {
+const TemplateName = () => {
     return (
-        <div className={s.templateName}>
+        <div className={`${s.templateName}`}>
 
         </div>
     );

@@ -28,5 +28,3 @@ export const servecesList = [
         btnText:'Купить мастер-класс',
     },
 ] 
-
-export default servecesList

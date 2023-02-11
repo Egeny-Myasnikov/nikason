@@ -6,6 +6,8 @@ import ErrorPage from "@pages/ErrorPage";
 import Home from "@pages/Home";
 import Workshop from "@pages/Workshop";
 import Furniture from "@pages/Furniture";
+import Privacy from "@pages/Privacy";
+import Offer from "@pages/Offer";
 
 export const router = createBrowserRouter([
   {
@@ -25,14 +27,14 @@ export const router = createBrowserRouter([
     path: "/furniture",
     element: <Furniture />,
   },
-  // {
-  //   path: "/privacy",
-  //   element: <Privacy />,
-  // },
-  // {
-  //   path: "/offer",
-  //   element: <Offer />,
-  // },
+  {
+    path: "/privacy",
+    element: <Privacy />,
+  },
+  {
+    path: "/offer",
+    element: <Offer />,
+  },
   {
     path: "/contacts",
     element: <Contacts />,

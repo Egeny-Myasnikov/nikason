@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import Header from '@components/Header';
 import Footer from '@components/Footer';
 import HeroBlock from './HeroBlock';
-import AdvantageBlock from '@components/AdvantageBlock';
+import Advantage from '@components/Advantage';
 import CatalogBlock from './CatalogBlock';
 import AboutBlock from './AboutBlock';
 import VideoBlock from './VideoBlock';
@@ -21,7 +21,7 @@ const Home = () => {
             <Header />
             <main className="main">
                 <HeroBlock btnOnClick={moveTo} />
-                <AdvantageBlock title='NIKASON BRAND это' homePage />
+                <Advantage title='NIKASON BRAND это' homePage />
                 <div className="container">
                     <CatalogBlock />
                 </div>

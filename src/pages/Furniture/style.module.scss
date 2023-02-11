@@ -1,0 +1,27 @@
+.list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    counter-reset: item;
+}
+
+.item {
+    border: 1px solid #000;
+    padding: 60px 80px 20px 40px;
+    position: relative;
+    width: 33.333%;
+
+
+    &::after {
+        position: absolute;
+        right: 40px;
+        top: 10px;
+        counter-increment: item;
+        content: counter(item);
+        font-family: TenorSans;
+        font-size: 48px;
+        line-height: 100%;
+        color: var(--title-color);
+
+    }
+}

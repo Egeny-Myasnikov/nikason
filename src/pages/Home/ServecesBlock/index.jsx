@@ -1,6 +1,6 @@
 import TwoHalf from '@components/TwoHalf'
 import Button from '@components/UI/Button'
-import servecesList from '@helpers/servecesList'
+import { servecesList } from '@helpers/servecesList'
 import s from './ServecesBlock.module.scss'
 const ServecesBlock = ({ servecesref }) => {
     return (

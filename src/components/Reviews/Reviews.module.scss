@@ -1,0 +1,25 @@
+.title {
+    margin-bottom: 20px;
+}
+
+.imgWrapper {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 10px;
+}
+
+// .img {
+//     cursor: zoom-in;
+
+//     &:nth-child(1) {
+//         position: fixed;
+//         z-index: 3;
+//         left: 50%;
+//         top: 50%;
+//         max-width: 70vw;
+//         max-height: 100vh;
+//         transform: translate(-50%, -50%) scale(2.5);
+//     }
+// }

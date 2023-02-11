@@ -1,17 +1,17 @@
 import Header from '@components/Header';
 import Footer from '@components/Footer';
 
-const Furniture = () => {
+const Offer = () => {
     return (
         <div className='wrapper'>
             <Header />
             <main className="main">
                 <div className="container">
-                    <h1>Furniture page</h1>
+                    <h1>Offer page</h1>
                 </div>
             </main>
             <Footer />
         </div>
     );
 };
-export default Furniture;
+export default Offer;
