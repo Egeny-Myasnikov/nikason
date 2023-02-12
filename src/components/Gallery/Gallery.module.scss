@@ -1,1 +1,37 @@
-.gallery {}
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+
+
+}
+
+.bigImgBox {
+    display: flex;
+
+    &__img {
+
+        width: 800px;
+        height: 600px;
+    }
+}
+
+
+.minImgBox {
+    display: flex;
+    gap: 17px;
+
+    &__img {
+        cursor: pointer;
+        width: 100px;
+        height: 100px;
+        transition: .4s linear;
+
+        &:hover {
+            transform: translateY(-10px);
+        }
+    }
+}

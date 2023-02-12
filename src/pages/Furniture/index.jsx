@@ -3,6 +3,7 @@ import Footer from '@components/Footer';
 import Hero from '@components/Hero';
 import Reviews from '@components/Reviews';
 import RequestBlock from '@components/RequestBlock';
+import Gallery from '@components/Gallery';
 
 import img from './../../assets/img/portfolio-hero.webp'
 import reviews1 from './../../assets/img/reviews/reviews--1.webp'
@@ -37,7 +38,7 @@ const Furniture = () => {
                 </section>
                 <section className={`section container`}>
                     <h2 className="title">Портфолио</h2>
-
+                    <Gallery />
                 </section>
 
                 <section className={`section container`}>
