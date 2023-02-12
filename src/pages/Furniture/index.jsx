@@ -12,6 +12,7 @@ import reviews3 from './../../assets/img/reviews/reviews--3.webp'
 import reviews4 from './../../assets/img/reviews/reviews--4.webp'
 
 import s from './style.module.scss'
+import ChooseUs from './ChooseUs';
 
 const Furniture = () => {
     const imgs = [
@@ -32,10 +33,13 @@ const Furniture = () => {
         <div className='wrapper'>
             <Header />
             <main className="main">
-                <Hero img={img} title="Столярная мастерская NIKASON BRAND" subTitle='Воплотим вашу любую задумку в реальность' btnText='Заказать мебель' />
-                <section className={`section container`}>
-                    <h2 className="title">Почему выбирают нас</h2>
-                </section>
+                <Hero
+                    img={img}
+                    title="Столярная мастерская"
+                    brand='NIKASON BRAND'
+                    subTitle='Воплотим вашу любую задумку в реальность'
+                    btnText='Заказать мебель' />
+                <ChooseUs />
                 <section className={`section container`}>
                     <h2 className="title">Портфолио</h2>
                     <Gallery />
@@ -43,7 +47,7 @@ const Furniture = () => {
 
                 <section className={`section container`}>
                     <h2 className="title">Этапы производства</h2>
-                    <ul className={`${s.list}`}>
+                    <ul className={`${s.list} list`}>
                         {productionSteps.map((step, i) => <li key={i} className={`${s.item}`}>{step}</li>)}
                     </ul>
                 </section>

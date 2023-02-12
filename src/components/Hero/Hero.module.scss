@@ -1,22 +1,36 @@
-// @import './../../scss/vars'
+@import '../../scss/mixins.scss';
+
 .hero {
     display: grid;
+    grid-template-columns: minmax(100%, 100%);
     justify-content: center;
     align-items: center;
 }
 
 .img {
+    width: 100%;
+    min-height: 550px;
+    z-index: 1;
     grid-area: 1/1/1/1;
+
+    @include screenLap {
+        min-height: 350px;
+    }
+
+    @include screenMob {
+        min-height: 220px;
+    }
 
 }
 
 .info {
+    z-index: 2;
     grid-area: 1/1/1/1;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    padding: 0 448px;
     padding-bottom: 100px;
     background: linear-gradient(rgb(50, 50, 50), transparent);
     height: 100%;
@@ -25,6 +39,14 @@
 
 .btn {
     margin-top: 50px;
+
+    @include screenLap {
+        margin-top: 20px;
+    }
+
+    @include screenMob {
+        margin-top: 0px;
+    }
 }
 
 .subTitle,

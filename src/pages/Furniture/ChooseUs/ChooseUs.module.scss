@@ -1,0 +1,17 @@
+.list {
+    row-gap: 70px;
+    column-gap: 30px;
+}
+
+
+.title {
+    border-bottom: 1px solid var(--black-color);
+    font-weight: 700;
+    line-height: 200%;
+    font-size: 18px;
+}
+
+.text {
+    margin-top: 20px;
+    font-size: 16px;
+}

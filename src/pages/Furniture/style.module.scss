@@ -1,7 +1,4 @@
 .list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
     counter-reset: item;
 }
 
@@ -9,7 +6,7 @@
     border: 1px solid #000;
     padding: 60px 80px 20px 40px;
     position: relative;
-    width: 33.333%;
+
 
 
     &::after {
