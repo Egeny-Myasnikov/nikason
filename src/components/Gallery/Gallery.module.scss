@@ -1,34 +1,55 @@
+@import '../../scss/mixins.scss';
+
 .gallery {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    gap: 20px;
+    width: 70%;
+    margin: 0 auto;
+
+    @include screenLap {
+        width: 100%;
+    }
 
 
 }
 
 .bigImgBox {
     display: flex;
+    width: 100%;
+    background-color: #fff;
 
     &__img {
-
-        width: 800px;
+        flex: 1 0 auto;
         height: 600px;
+
+        @include screenDesc {
+            height: 500px;
+        }
+
+        @include screenLap {
+            height: 400px;
+        }
+
+        @include screenLap {
+            height: 250px;
+        }
+
     }
 }
 
 
 .minImgBox {
+    width: 100%;
     display: flex;
+    overflow-x: auto;
     gap: 17px;
+    margin-top: 20px;
+    padding-bottom: 20px;
 
     &__img {
         cursor: pointer;
         width: 100px;
         height: 100px;
         transition: .4s linear;
+        flex: 1 0 auto;
 
         &:hover {
             transform: translateY(-10px);
