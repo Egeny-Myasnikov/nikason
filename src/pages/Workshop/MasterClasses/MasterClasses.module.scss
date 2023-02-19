@@ -1,0 +1,41 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.link {
+    flex: 1 0 auto;
+    text-align: center;
+    border: 1px solid #000;
+    padding: 20px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.item {
+    list-style: none;
+}
+
+
+.figure {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    img {
+
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    figcaption {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}

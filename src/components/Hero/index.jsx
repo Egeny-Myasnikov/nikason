@@ -18,7 +18,7 @@ const Hero = ({ aboutPage, title, img, subTitle, btnText, brand }) => {
                         <br />
                         {brand && brand}
                     </h1>
-                    <Button mod='secondary' propsClass={`${s.btn}`}>{btnText}</Button>
+                    {btnText && <Button mod='secondary' propsClass={`${s.btn}`}>{btnText}</Button>}
                 </div>
 
             }
