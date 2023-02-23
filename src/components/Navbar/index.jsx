@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import s from './navbar.module.scss'
-import logo from "./../../assets/img/logo-nikason.webp"
+import logo from "@img/logo-nikason.webp"
 import { navList1, navList2 } from '@helpers/navList'
 const Navbar = () => {
     const hasActive = ({ isActive }) => isActive ? `link  ${s.link} link__active` : `link ${s.link}`

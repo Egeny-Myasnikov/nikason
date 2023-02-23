@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { moveTo } from '@utils/scroll';
 import Header from '@components/Header';
 import Footer from '@components/Footer';
 import HeroBlock from './HeroBlock';
@@ -10,17 +11,13 @@ import ServecesBlock from './ServecesBlock';
 import QualityAssuranceBlock from './QualityAssuranceBlock';
 const Home = () => {
     const servecesRef = useRef(null);
-    const moveTo = () => {
-        servecesRef.current.scrollIntoView({
-            behavior: "smooth",
-        });
-    }
+
 
     return (
         <div className='wrapper'>
             <Header />
             <main className="main">
-                <HeroBlock btnOnClick={moveTo} />
+                <HeroBlock btnOnClick={() => moveTo(servecesRef)} />
                 <Advantage title='NIKASON BRAND это' homePage />
                 <div className="container">
                     <CatalogBlock />

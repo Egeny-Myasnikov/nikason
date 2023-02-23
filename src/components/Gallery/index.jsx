@@ -2,15 +2,15 @@ import Img from '@components/UI/Img';
 
 import s from './Gallery.module.scss';
 //big img
-import bigImg0 from './../../assets/img/portfolio/big/port--0.webp'
+import bigImg0 from '@img/portfolio/big/port--0.webp'
 //min img
-import minImg0 from './../../assets/img/portfolio/port-min--0.jpg'
-import minImg1 from './../../assets/img/portfolio/port-min--1.webp'
-import minImg2 from './../../assets/img/portfolio/port-min--2.webp'
-import minImg3 from './../../assets/img/portfolio/port-min--3.webp'
-import minImg4 from './../../assets/img/portfolio/port-min--4.webp'
-import minImg5 from './../../assets/img/portfolio/port-min--5.webp'
-import minImg6 from './../../assets/img/portfolio/port-min--6.webp'
+import minImg0 from '@img/portfolio/port-min--0.jpg'
+import minImg1 from '@img/portfolio/port-min--1.webp'
+import minImg2 from '@img/portfolio/port-min--2.webp'
+import minImg3 from '@img/portfolio/port-min--3.webp'
+import minImg4 from '@img/portfolio/port-min--4.webp'
+import minImg5 from '@img/portfolio/port-min--5.webp'
+import minImg6 from '@img/portfolio/port-min--6.webp'
 const Gallery = () => {
     const minImgs = [
         { imgPath: minImg0, imgAlt: 'Nikason' },

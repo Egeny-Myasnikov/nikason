@@ -1,6 +1,6 @@
 import TwoHalf from '@components/TwoHalf';
 import Button from '@components/UI/Button';
-import img from './../../../assets/img/workshops/carpentry/carpentry-for-beginners.webp'
+import img from '@img/workshops/carpentry/carpentry-for-beginners.webp'
 import s from './Guide.module.scss';
 const Guide = () => {
     return (

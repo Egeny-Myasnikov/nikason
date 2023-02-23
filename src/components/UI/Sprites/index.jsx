@@ -1,5 +1,5 @@
 import s from './sprites.module.scss'
-import sprite from './../../../assets/sprite.svg';
+import sprite from '@assets/sprite.svg';
 const Icon = ({ icon, white, big }) => {
     return (
         <svg className={big ? s.svgBig : s.svgLg}>

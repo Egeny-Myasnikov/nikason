@@ -1,7 +1,7 @@
 import Button from '@components/UI/Button';
 import Img from '@components/UI/Img';
 import s from './Hero.module.scss';
-const Hero = ({ aboutPage, title, img, subTitle, btnText, brand }) => {
+const Hero = ({ aboutPage, title, img, subTitle, btnText, brand, onClick }) => {
     return (
         <div className={!aboutPage ? s.hero : 'container'}>
             {aboutPage && <h1 className="titleHero">{title}</h1>}
@@ -18,7 +18,7 @@ const Hero = ({ aboutPage, title, img, subTitle, btnText, brand }) => {
                         <br />
                         {brand && brand}
                     </h1>
-                    {btnText && <Button mod='secondary' propsClass={`${s.btn}`}>{btnText}</Button>}
+                    {btnText && <Button onClick={onClick} mod='secondary' propsClass={`${s.btn}`}>{btnText}</Button>}
                 </div>
 
             }

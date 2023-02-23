@@ -3,7 +3,7 @@ import Socbar from '@components/Socbar'
 import TwoHalf from '@components/TwoHalf'
 import Button from '@components/UI/Button'
 import s from './heroBlock.module.scss'
-import homeHiroImg from './../../../assets/img/home-hero.webp'
+import homeHiroImg from '@img/home-hero.webp'
 
 const HeroBlock = ({ btnOnClick }) => {
     const ref = createRef()

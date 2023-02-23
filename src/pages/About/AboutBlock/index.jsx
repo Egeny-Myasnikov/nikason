@@ -1,5 +1,5 @@
 import TwoHalf from '@components/TwoHalf';
-import photo2 from '../../../assets/img/photo--2.webp'
+import photo2 from '@img/photo--2.webp'
 // import s from './AboutBlock.module.scss';
 const AboutBlock = () => {
     return (

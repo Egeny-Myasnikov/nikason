@@ -1,5 +1,5 @@
 import s from './QualityAssuranceBlock.module.scss'
-import logo from './../../../assets/img/logo-big.webp'
+import logo from '@img/logo-big.webp'
 const QualityAssuranceBlock = () => {
     return (
         <div className={`${s.qualityAssuranceBlock} container`}>

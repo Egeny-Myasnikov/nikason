@@ -1,0 +1,38 @@
+.buttonClose {
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background-color: var(--bg);
+    border: none;
+    cursor: pointer;
+    position: relative;
+
+
+    &::after,
+    &::before {
+        content: '';
+        background: var(--colorLines);
+        width: 70%;
+        height: 2px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transition: .2s linear;
+    }
+
+    &::after {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &::before {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    &:hover::after {
+        transform: translate(-50%, -50%) rotate(65deg);
+    }
+
+    &:hover::before {
+        transform: translate(-50%, -50%) rotate(-65deg);
+    }
+}
