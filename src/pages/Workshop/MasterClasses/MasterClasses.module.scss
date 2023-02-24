@@ -52,8 +52,9 @@
         justify-items: center;
     }
 
-    img {
+    .beforeAfter {
         max-height: 600px;
+
 
         @include screenDesc {
             max-height: 550px;

@@ -1,8 +1,11 @@
 import { useState } from 'react';
 import s from './MasterClasses.module.scss';
 import buffet from '@img/workshops/restoration/buffet.webp'
+import imgBefore1 from '@img/beforeAfter/before--1.webp';
+import imgAfter1 from '@img/beforeAfter/after--1.webp';
 import Modal from '@components/Modal';
 import Button from '@components/UI/Button';
+import BeforeAfter from '@components/BeforeAfter';
 const MasterClasses = ({ masterClassesRef }) => {
     const [open, setOpen] = useState(false)
     const [id, setId] = useState(0)
@@ -14,6 +17,8 @@ const MasterClasses = ({ masterClassesRef }) => {
         {
             id: 0,
             img: buffet,
+            imgBefore: imgBefore1,
+            imgAfter: imgAfter1,
             title: 'Буфет',
             cost: '1500'
         }
@@ -42,7 +47,13 @@ const MasterClasses = ({ masterClassesRef }) => {
             </ul>
             <Modal title={masterClassesList[id].title} open={open} setOpen={setOpen}>
                 <div className={`${s.modalContent}`}>
-                    <img src={masterClassesList[id].img} alt={masterClassesList[id].title} />
+                    <BeforeAfter
+                        size='330px'
+                        imgBefore={masterClassesList[id].imgBefore}
+                        imgBeforeAlt={`${masterClassesList[id].title} до реставрации`}
+                        imgAfter={masterClassesList[id].imgAfter}
+                        imgAfterAlt={`${masterClassesList[id].title} после реставрации`}
+                    />
                     <div className={`${s.col}`}>
                         <h4 className={`${s.modalTitle} title3`}>{masterClassesList[id].title}</h4>
                         <span className={`${s.modalPrice} priceRub`}>{masterClassesList[id].cost}</span>
